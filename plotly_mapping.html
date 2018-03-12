@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A Simple Plotly Exercise</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+        		<h1>A Simple Plotly Map</h1>
+        <div class="container">
+        	<p><i>A workbook to try out Plotly's mapping functionalities</i></p>
+        	<h4>Introduction</h4>
+        	<p>The Plotly package is an increasingly popular resource for making interactive visualizations quickly with Python. From what I've heard, it includes functionalities available in other visualization packages like d3.js, but integrates natively with Python and the Python data analysis package, pandas. This is exciting! Today I decided to experiment with mapping in Plotly using some data from the US census, in preparation for a larger project on <a href="https://www.kaggle.com/c/Raising-Money-to-Fund-an-Organizational-Mission">the effectiveness of direct mail for fundraising.</a> Stay tuned for the completed project, and for now enjoy this visualization of the population of counties in Texas!
+        	<break>
+        	<p><b>Data: </b>Data for this exercise comes from the United State Census, available <a href="http://www2.census.gov/geo/docs/maps-data/data/rel/zcta_county_rel_10.txt">here.</a></p>
+        	<p><b>Code Requirements: </b>to run the source code, visit my github @hannahrosey and download the ipython notebook. You will also need to sign up for a free Plotly account, pip install the Plotly package, and create your Plotly API .credentials file (instructions are in <a href="https://plot.ly/python/getting-started/">the Plotly documentation.</a>)</p>
+        	<break>
+        	<h4>The Plot</h4>
+        	<div id="plotly-div">
+            <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~hrg2117/25.embed">
+            </iframe>
+            </div>    
+            <break>
+            <div>
+        	<h4>The Process</h4>
+        	<p>There were three main steps to this mini-project:
+        	<break> 
+        	<li>First, I needed to access and clean up data on counties from the US Census Bureau. To do this, I used the Python requests package and a custom function to convert the data to a pandas format. </li>
+        	<li>Second, I needed to choose the variables I want to visualize. I settled on population. The longer-term project I'm working on centers on how prospects in different goegraphic area respond to direct mail; variables like "donors per capita" will likely be helpful, making population a useful feature to visualize.</li>
+        	<li>Finally, I got acquainted with the Plotly's choropleth functionalities, including creating a custom color scale. </li>
+        <h4>Conclusions</h4>
+        <p>Plotly allowed me to quickly make a nice-looking map, essentially with four lines of code. I found Plotly did crash when I provided too much data. When I plotted the whole continental US, I got a JSONDecoderError, which disappeared once I scoped down to a subset of my data or a single state. So while Plotly is quite efficient--no laborious process of uploading and converting data to a tileset via API--so far I'm still leaning towards Mapbox as my mapping tool of choice. I will likely choose Plotly over packages like matplotlib and seaborne for other kinds of mapping from here on out however; the integration with pandas and the automatic interactivity is great!</p>
+        <break>
+        <break>
+        <break>
+        <break>
+		<footer>
+    		<ul>
+        		<li><a href="mailto:hannahrosegorman@gmail.com">email</a></li>
+			</ul>
+		</footer>
+	</body>
