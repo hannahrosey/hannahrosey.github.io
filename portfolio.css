@@ -1,0 +1,33 @@
+.grey-container {
+	width: 100%;
+	background-color: #000000
+}
+
+h1 {
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20pt;
+}
+h2 {
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: oblique;
+	font-size: 15pt;
+}
+
+h3 {
+	color: black;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12pt;
+}
+
+.project-container{
+	width:50%;
+	background-color: #dbd9d9
+}
+
+a{
+	color: black;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+	font-size: 10pt;
+}
