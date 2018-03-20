@@ -6,24 +6,42 @@
 h1 {
 	color: white;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 20pt;
+	font-size: 22pt;
 }
 h2 {
 	color: white;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-style: oblique;
-	font-size: 15pt;
+	font-size: 18pt;
 }
 
 h3 {
 	color: black;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 12pt;
+	font-size: 15pt;
 }
 
 .project-container{
 	width:50%;
 	background-color: #dbd9d9
+}
+
+h4 {
+	color: black;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 10pt;
+	font-stle: oblique;
+}
+
+.project-container{
+	width:50%;
+	background-color: #dbd9d9
+}
+
+p {
+	color: black;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 10pt;
 }
 
 a{
